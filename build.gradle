@@ -1,0 +1,27 @@
+plugins {
+	id 'java'
+	id 'war'
+	id 'org.springframework.boot' version '2.7.10'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.ssucode'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	// jasperreports
+	implementation 'net.sf.jasperreports:jasperreports:6.16.0'
+	implementation files('libs/itext-2.1.7.js4.jar')
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
