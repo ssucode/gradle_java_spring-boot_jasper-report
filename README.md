@@ -1,4 +1,17 @@
-# Jasper Report using Spring Boot (Jave 11, Gradle)
+# Jasper Report using Spring Boot (Java 11, Gradle)
+## Requirements
+### Let's create Spring Boot Project from Spring Initializer site [https://start.spring.io/](https://start.spring.io/)
+  - Project : Gradle - Groovy
+  - Language : Java
+  - Project Metadata ...
+  - Spring Boot : 2.7.10
+  - Packaging : War
+  - Java : 11
+
+### Version as :
+* Java : [java-11-openjdk-11.0.15.9-1.windows.ojdkbuild.x86_64.zip](https://github.com/ojdkbuild/ojdkbuild/releases/download/java-11-openjdk-11.0.15.9-1/java-11-openjdk-11.0.15.9-1.windows.ojdkbuild.x86_64.zip)
+* JasperReports : [net.sf.jasperreports:jasperreports:6.16.0](https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports/6.16.0)
+* itext : [itext-2.1.7.js4.jar](https://jasperreports.sourceforge.net/maven2/com/lowagie/itext/2.1.7.js4/itext-2.1.7.js4.jar) (download include libs folder)
 ## Export (PDF, EXCEL, CSV, DOCX)
 ### Reference Documentation
 Run the application.
